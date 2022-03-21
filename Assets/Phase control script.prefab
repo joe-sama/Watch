@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5204194937354939796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5204194937354939794}
+  - component: {fileID: 5204194937354939795}
+  - component: {fileID: 5204194937354939793}
+  - component: {fileID: 5204194937354939807}
+  - component: {fileID: 5204194937354939792}
+  m_Layer: 0
+  m_Name: Phase control script
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5204194937354939794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5204194937354939796}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.924737, y: 2.1512475, z: 0.39516935}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5204194937354939795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5204194937354939796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a03d1fdf6e28ea45bf844ad03c348b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Log: {fileID: 0}
+  averageCalculation: {fileID: 5204194937354939793}
+  serialCom: {fileID: 0}
+  shownTime: {fileID: 0}
+  isWatch: 0
+  display_wallMounted: {fileID: 0}
+  display_hud: {fileID: 0}
+  display_watch: {fileID: 0}
+  AvgHR: 0
+  experimentTime: 180
+  score: {fileID: 0}
+  averageIn: 0
+--- !u!114 &5204194937354939793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5204194937354939796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60eeb8cfcc3f7574cb01cb6d72d9f3cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SerialCom: {fileID: 0}
+  showntime: {fileID: 0}
+  timeleft: 45
+  average: 0
+  Avgtext: {fileID: 0}
+  Avgtext2: {fileID: 0}
+  Avgtext3: {fileID: 0}
+  minAverage: 0
+  maxAverage: 0
+  rangeBetrag: 15
+--- !u!114 &5204194937354939807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5204194937354939796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8fd59e1200c114084b73bf1dfdf743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serialCom: {fileID: 0}
+  displayedtext: {fileID: 0}
+--- !u!114 &5204194937354939792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5204194937354939796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb597f4d52495bd4d9483cefb70bf117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayedtext: {fileID: 0}
+  displayedtext1: {fileID: 0}
+  displayedtext2: {fileID: 0}
+  male: 1
+  female: 0
+  age: 20
+  weight: 50
+  caloriesAusgabe: 0
+  bpm: 0
